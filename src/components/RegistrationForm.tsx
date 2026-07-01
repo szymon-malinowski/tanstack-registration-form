@@ -12,9 +12,8 @@ export default function RegistrationForm() {
   });
 
   return (
-    <div className="bg-gray-400">
+    <div>
       <form
-        className="flex flex-col"
         onSubmit={(event) => {
           event.preventDefault();
           event.stopPropagation();
