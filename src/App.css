@@ -1,8 +1,4 @@
-h1 {
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
 }

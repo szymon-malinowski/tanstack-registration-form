@@ -1,5 +1,4 @@
 import { useForm } from "@tanstack/react-form";
-import "../App.css";
 
 export default function RegistrationForm() {
   const form = useForm({
@@ -13,15 +12,16 @@ export default function RegistrationForm() {
   });
 
   return (
-    <div className="container">
+    <div className="bg-gray-400">
       <form
+        className="flex flex-col"
         onSubmit={(event) => {
           event.preventDefault();
           event.stopPropagation();
           form.handleSubmit();
         }}
       >
-        <h1>Seminar Registration</h1>
+        <h1 className="text-center">Seminar Registration</h1>
         <form.Field name="firstName">
           {(field) => (
             <label>
