@@ -5,6 +5,7 @@ export default function RegistrationForm() {
     defaultValues: {
       firstName: "",
       lastName: "",
+      email: "",
     },
     onSubmit: ({ value }) => {
       console.log(value);
@@ -47,7 +48,7 @@ export default function RegistrationForm() {
             </label>
           )}
         </form.Field>
-        <form.Field name="firstName">
+        <form.Field name="email">
           {(field) => (
             <label>
               Email
